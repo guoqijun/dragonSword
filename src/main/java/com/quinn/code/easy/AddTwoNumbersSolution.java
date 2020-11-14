@@ -8,25 +8,38 @@ import com.quinn.code.enity.ListNode;
 //原因：342 + 465 = 807
 public class AddTwoNumbersSolution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(0);
+        ListNode result = new ListNode(-1);
+        ListNode cursor = result;
         int l1val = 0;
         int l2val = 0;
         int good = 0;
         int add = 0;
-        while (l1 != null && l2 != null) {
-            l1val = l1.getVal();
-            l2val = l2.getVal();
-            good = l1val + l2val;
+        while (l1 != null || l2 != null || add != 0) {
+            if (l1 != null) {
+                l1val = l1.val;
+                l1 = l1.next;
+            } else {
+                l1val = 0;
+            }
+            if (l2 != null) {
+                l2val = l2.val;
+                l2 = l2.next;
+            } else {
+                l2val = 0;
+            }
+            good = l1val + l2val + add;
             add = good / 10;
             good = good % 10;
-            if (l1.getNext() != null) {
-                l1 = l1.getNext();
-            }
-            if (l2.getNext() != null) {
-                l2 = l2.getNext();
+
+            if (cursor.val == -1) {
+                cursor.val = (good);
+            } else {
+                ListNode newOne = new ListNode(good);
+                cursor.next = (newOne);
+                cursor = newOne;
             }
         }
 
-        return null;
+        return result;
     }
 }
