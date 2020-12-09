@@ -22,7 +22,7 @@ public class LongestPalindromeSolution {
             for (int j = s.length() - 1; j > i; j--) {
                 result = isMaxStr(s, i, j);
                 if (result) {
-                    if (s.substring(i, j+1).length() > maxStr.length()) {
+                    if (s.substring(i, j + 1).length() > maxStr.length()) {
                         maxStr = s.substring(i, j + 1);
                     }
                     break;

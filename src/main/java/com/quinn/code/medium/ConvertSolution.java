@@ -31,7 +31,7 @@ public class ConvertSolution {
         }
 
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < numRows ; i++) {
+        for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < numCol; j++) {
                 if (zArray[j][i] != ' ') {
                     stringBuilder.append(zArray[j][i]);
