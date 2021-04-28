@@ -8,10 +8,10 @@ public class TestHeap {
         }
     }
 
-    public static boolean testExceptionTrunc()  {
+    public static boolean testExceptionTrunc() {
         try {
             // 人工构造异常抛出的场景
-            ((Object)null).getClass();
+            ((Object) null).getClass();
         } catch (Exception e) {
             if (e.getStackTrace().length == 0) {
                 try {

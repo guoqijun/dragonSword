@@ -37,7 +37,7 @@ public class FourSumSolution {
     }
 
     public static void main(String[] args) {
-        int[] fuck = {1,-2,-5,-4,-3,3,3,5};
+        int[] fuck = {1, -2, -5, -4, -3, 3, 3, 5};
         FourSumSolution threeSumSolution = new FourSumSolution();
         List<List<Integer>> result = threeSumSolution.fourSum(fuck, -11);
 

@@ -25,7 +25,7 @@ public class GenerateParenthesisSolution {
 
     public boolean valid(char[] current) {
         int balance = 0;
-        for (char c: current) {
+        for (char c : current) {
             if (c == '(') {
                 ++balance;
             } else {
