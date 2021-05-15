@@ -13,9 +13,48 @@ public class Code {
         Code code = new Code();
         int[] A = new int[]{2, 5, 6, 0, 0, 1, 2};
 
-
         boolean result = code.search2(A, 4);
         System.out.println(result);
+    }
+
+    //左右根,后续遍历
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+
+        fuck(root, result);
+        return result;
+    }
+
+    public void fuck(TreeNode root, List<Integer> result) {
+        if (root == null) {
+            return;
+        }
+        if (root.left != null) {
+            fuck(root.left, result);
+        }
+        if (root.right != null) {
+            fuck(root.right, result);
+        }
+        result.add(root.val);
+    }
+
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
 
     public boolean search3(int[] nums, int target) {
