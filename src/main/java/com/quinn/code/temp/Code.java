@@ -3,9 +3,7 @@ package com.quinn.code.temp;
 import com.quinn.code.medium.ConvertSolution;
 
 import java.sql.ClientInfoStatus;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Code {
@@ -13,8 +11,78 @@ public class Code {
         Code code = new Code();
         int[] A = new int[]{2, 5, 6, 0, 0, 1, 2};
 
-        boolean result = code.search2(A, 4);
+        int result = code.numDifferentIntegers("a1b01c001");
+
+        String s2 = "0002321".replaceAll("^(0+)", "");
+        System.out.println(s2);
         System.out.println(result);
+    }
+
+    public int countOdds(int low, int high) {
+        int count = 0;
+        for (int start = low; start <= high; start++) {
+            if (isOdd(start)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public boolean isOdd(int num) {
+        if (num % 2 == 0) {
+            return false;
+        }
+        return true;
+    }
+
+    public int numDifferentIntegers(String word) {
+        Set<String> intSet = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
+        boolean intEnd = false;
+        for (int index = 0; index < word.length(); index++) {
+            if (word.charAt(index) >= 'a' && word.charAt(index) <= 'z') {
+                if (intEnd) {
+                    intEnd = false;
+                    int deleteLen = 0;
+                    if (sb.length() >= 2) {
+                        for (int j = 0; j < sb.length() - 1; j++) {
+                            if (sb.charAt(j) == '0') {
+                                deleteLen++;
+                            } else {
+                                break;
+                            }
+                        }
+                    }
+                    if (deleteLen > 0) sb.delete(0, deleteLen);
+
+                    intSet.add((sb.toString()));
+                }
+                if (sb.length() > 0) {
+                    sb.delete(0, sb.length());
+                }
+            } else {
+                intEnd = true;
+                sb.append(word.charAt(index));
+            }
+        }
+        if (intEnd && sb.length() > 0) {
+            intEnd = false;
+            int deleteLen = 0;
+            if (sb.length() >= 2) {
+                for (int j = 0; j < sb.length() - 1; j++) {
+                    if (sb.charAt(j) == '0') {
+                        deleteLen++;
+                    } else {
+                        break;
+                    }
+                }
+            }
+            if (deleteLen > 0) sb.delete(0, deleteLen);
+            intSet.add((sb.toString()));
+        }
+
+        return intSet.size();
     }
 
     //左右根,后续遍历
