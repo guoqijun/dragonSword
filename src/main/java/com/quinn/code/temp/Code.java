@@ -1,6 +1,7 @@
 package com.quinn.code.temp;
 
 import com.quinn.code.medium.ConvertSolution;
+import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 
 import java.sql.ClientInfoStatus;
 import java.util.*;
@@ -16,6 +17,37 @@ public class Code {
         String s2 = "0002321".replaceAll("^(0+)", "");
         System.out.println(s2);
         System.out.println(result);
+    }
+
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);
+        int len = nums.length;
+        return nums[len - k + 1];
+    }
+
+    public int distanceBetweenBusStops(int[] distance, int start, int destination) {
+        int len = distance.length;
+        if (len == 1) {
+            return distance[0];
+        }
+
+        long sum = 0;
+        for (int index = 0; index < len; index++) {
+            sum += distance[index];
+        }
+
+        long frontDistance = 0;
+        if (start > destination) {
+            int temp = 0;
+            temp = destination;
+            destination = start;
+            start = temp;
+        }
+        for (int index = start; index < destination; index++) {
+            frontDistance += distance[index];
+        }
+
+        return (int) Math.min(frontDistance, sum - frontDistance);
     }
 
     public int countOdds(int low, int high) {
