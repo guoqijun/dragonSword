@@ -19,6 +19,54 @@ public class Code {
         System.out.println(result);
     }
 
+    public int missingNumber(int[] nums) {
+        int len = nums.length;
+        int sum = (1 + len) * len / 2;
+        for (int num : nums) {
+            sum = sum - num;
+        }
+        return sum;
+    }
+
+    public int specialArray(int[] nums) {
+        int len = nums.length;
+        int count = 0;
+        for (int specialNum = 1; specialNum <= len; specialNum++) {
+            for (int index = 0; index < len; index++) {
+                if (nums[index] >= specialNum) {
+                    count++;
+                }
+            }
+
+            if (count == specialNum) {
+                return specialNum;
+            } else {
+                count = 0;
+            }
+        }
+        return -1;
+    }
+
+
+    public boolean isUnivalTree(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        int num = root.val;
+        return isEqualTree(root.right, num) && isEqualTree(root.left, num);
+    }
+
+    public boolean isEqualTree(TreeNode root, int num) {
+        if (root == null) {
+            return true;
+        }
+        if (root.val != num) {
+            return false;
+        }
+        return isEqualTree(root.right, num) && isEqualTree(root.left, num);
+    }
+
+
     public int findKthLargest(int[] nums, int k) {
         Arrays.sort(nums);
         int len = nums.length;
