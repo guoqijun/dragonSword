@@ -19,6 +19,26 @@ public class Code {
         System.out.println(result);
     }
 
+    public int balancedStringSplit(String s) {
+        int len = s.length();
+        int lNum = 0;
+        int rNum = 0;
+        int count = 0;
+        for (int index = 0; index < len; index++) {
+            if (s.charAt(index) == 'L') {
+                lNum++;
+            }
+            if (s.charAt(index) == 'R') {
+                rNum++;
+            }
+            if ((lNum != 0 && rNum != 0) && lNum == rNum) {
+                count++;
+                lNum = rNum = 0;
+            }
+        }
+        return count;
+    }
+
     public int missingNumber(int[] nums) {
         int len = nums.length;
         int sum = (1 + len) * len / 2;
