@@ -9,14 +9,28 @@ import java.util.stream.Collectors;
 
 public class Code {
     public static void main(String[] args) {
-        Code code = new Code();
-        int[] A = new int[]{2, 5, 6, 0, 0, 1, 2};
-
-        int result = code.numDifferentIntegers("a1b01c001");
-
-        String s2 = "0002321".replaceAll("^(0+)", "");
-        System.out.println(s2);
-        System.out.println(result);
+        int a;
+        int a1 = 15;
+        int a2 = 17;
+        int a3 = 19;
+        int sum1 = 0;
+        int sum2 = 0;
+        int sum3 = 0;
+        for (a = 15; ; a++) {
+            sum1 = (a / a1) + (a % a1);
+            if ((a % a1) <= 1) {
+                continue;
+            }
+            System.out.println("15 的商是" + (a / a1) + "，15 的余数是" + (a % a1) + ",和：" + sum1);
+            sum2 = (a / a2) + (a % a2);
+            System.out.println("17 的商是" + (a / a2) + "，17 的余数是" + (a % a2) + ",和：" + sum2);
+            sum3 = (a / a3) + (a % a3);
+            System.out.println("19 的商是" + (a / a3) + "，19 的余数是" + (a % a3) + ",和：" + sum3);
+            if (sum1 == sum2 && sum1 == sum3) {
+                System.out.println(a);
+                break;
+            }
+        }
     }
 
     public int balancedStringSplit(String s) {
