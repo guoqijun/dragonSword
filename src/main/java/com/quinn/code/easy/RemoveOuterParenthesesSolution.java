@@ -1,0 +1,17 @@
+package com.quinn.code.easy;
+
+public class RemoveOuterParenthesesSolution {
+    public String removeOuterParentheses(String s) {
+        StringBuilder sb = new StringBuilder();
+        int level = 0;
+        for (char c : s.toCharArray()) {
+            if (c == '(') level++;
+            if (level > 1) {
+                sb.append(c);
+            }
+            if (c == ')') level--;
+        }
+
+        return sb.toString();
+    }
+}
