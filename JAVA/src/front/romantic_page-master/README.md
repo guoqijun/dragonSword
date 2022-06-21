@@ -13,6 +13,6 @@
 
 ## 效果图
 
-![](./result.gif)
+![](result.gif)
 
 点 **Star** 或者 **Fork 的人**，祝你们幸福哦 ~
