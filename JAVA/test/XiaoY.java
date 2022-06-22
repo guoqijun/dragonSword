@@ -1,6 +1,6 @@
-package com.quinn.code.test;
+package test;
 
-import com.quinn.code.medium.ConvertSolution;
+import medium.ConvertSolution;
 
 public class XiaoY {
     /**

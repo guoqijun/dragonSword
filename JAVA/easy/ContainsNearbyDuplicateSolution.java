@@ -1,4 +1,4 @@
-package com.quinn.code.easy;
+package easy;
 
 public class ContainsNearbyDuplicateSolution {
     public boolean containsNearbyDuplicate(int[] nums, int k) {

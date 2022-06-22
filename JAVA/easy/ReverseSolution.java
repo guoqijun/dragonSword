@@ -1,6 +1,6 @@
-package com.quinn.code.easy;
+package easy;
 
-import com.quinn.code.medium.ConvertSolution;
+import medium.ConvertSolution;
 
 public class ReverseSolution {
     public int reverse(int x) {

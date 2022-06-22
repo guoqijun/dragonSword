@@ -1,4 +1,4 @@
-package com.quinn.code.medium;
+package medium;
 
 public class RemoveDuplicateLetters {
     public String removeDuplicateLetters(String s) {

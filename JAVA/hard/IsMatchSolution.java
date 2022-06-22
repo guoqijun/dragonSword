@@ -1,4 +1,4 @@
-package com.quinn.code.hard;
+package hard;
 
 public class IsMatchSolution {
     public boolean isMatch(String s, String p) {

@@ -1,6 +1,6 @@
-package com.quinn.code.easy;
+package easy;
 
-import com.quinn.code.enity.TreeNode;
+import enity.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

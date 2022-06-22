@@ -1,4 +1,4 @@
-package com.quinn.code.medium;
+package medium;
 
 public class UniquePathsSolution {
 

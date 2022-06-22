@@ -1,4 +1,4 @@
-package com.quinn.code.hard;
+package hard;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

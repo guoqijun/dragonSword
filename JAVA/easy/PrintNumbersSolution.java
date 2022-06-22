@@ -1,4 +1,4 @@
-package com.quinn.code.easy;
+package easy;
 
 public class PrintNumbersSolution {
     public int[] printNumbers(int n) {

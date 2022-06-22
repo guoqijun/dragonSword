@@ -1,4 +1,4 @@
-package com.quinn.code.enity;
+package enity;
 
 public class ListNode {
     public int val;

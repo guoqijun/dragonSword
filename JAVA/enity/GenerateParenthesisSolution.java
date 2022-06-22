@@ -1,4 +1,4 @@
-package com.quinn.code.enity;
+package enity;
 
 import java.util.ArrayList;
 import java.util.List;

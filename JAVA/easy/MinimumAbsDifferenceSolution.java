@@ -1,4 +1,4 @@
-package com.quinn.code.easy;
+package easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;

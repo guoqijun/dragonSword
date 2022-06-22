@@ -1,4 +1,4 @@
-package com.quinn.code.medium;
+package medium;
 
 public class LengthOfLISSolution {
     //[10,9,2,5,3,7,101,18]

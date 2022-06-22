@@ -1,4 +1,4 @@
-package com.quinn.code.hard;
+package hard;
 
 public class ShortestPalindromeSolution {
     public String shortestPalindrome(String s) {

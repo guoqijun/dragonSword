@@ -1,7 +1,7 @@
-package com.quinn.code.easy;
+package easy;
 
 
-import com.quinn.code.enity.ListNode;
+import enity.ListNode;
 
 public class MergeTwoListsSolution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {

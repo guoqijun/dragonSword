@@ -1,6 +1,6 @@
-package com.quinn.code.enity;
+package enity;
 
-import com.quinn.code.medium.RightSideViewSolution;
+import medium.RightSideViewSolution;
 
 public class TreeNode {
     public int val;

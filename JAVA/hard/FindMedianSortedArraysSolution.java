@@ -1,4 +1,4 @@
-package com.quinn.code.hard;
+package hard;
 
 //4. 寻找两个正序数组的中位数
 //输入：nums1 = [1,2], nums2 = [3,4]

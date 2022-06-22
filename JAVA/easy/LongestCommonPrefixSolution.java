@@ -1,4 +1,4 @@
-package com.quinn.code.easy;
+package easy;
 
 public class LongestCommonPrefixSolution {
     public String longestCommonPrefix(String[] strs) {

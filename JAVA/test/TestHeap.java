@@ -1,4 +1,4 @@
-package com.quinn.code.test;
+package test;
 
 public class TestHeap {
     public static void main(String[] args) {

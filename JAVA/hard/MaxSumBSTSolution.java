@@ -1,6 +1,6 @@
-package com.quinn.code.hard;
+package hard;
 
-import com.quinn.code.enity.TreeNode;
+import enity.TreeNode;
 
 public class MaxSumBSTSolution {
     public int maxSumBST(TreeNode root) {

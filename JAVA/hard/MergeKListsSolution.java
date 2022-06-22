@@ -1,6 +1,6 @@
-package com.quinn.code.hard;
+package hard;
 
-import com.quinn.code.enity.ListNode;
+import enity.ListNode;
 
 public class MergeKListsSolution {
     public ListNode mergeKLists(ListNode[] lists) {

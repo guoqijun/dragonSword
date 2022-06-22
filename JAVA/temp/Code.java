@@ -1,8 +1,8 @@
-package com.quinn.code.temp;
+package temp;
 
-import com.quinn.code.easy.ReverseSolution;
-import com.quinn.code.enity.ListNode;
-import com.quinn.code.medium.ConvertSolution;
+import easy.ReverseSolution;
+import enity.ListNode;
+import medium.ConvertSolution;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 
 import java.sql.ClientInfoStatus;

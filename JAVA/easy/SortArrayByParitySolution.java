@@ -1,4 +1,4 @@
-package com.quinn.code.easy;
+package easy;
 
 public class SortArrayByParitySolution {
     ////922. 按奇偶排序数组 II

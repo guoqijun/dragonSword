@@ -1,6 +1,6 @@
-package com.quinn.code.hard;
+package hard;
 
-import com.quinn.code.medium.RightSideViewSolution;
+import medium.RightSideViewSolution;
 
 import java.util.HashMap;
 import java.util.List;

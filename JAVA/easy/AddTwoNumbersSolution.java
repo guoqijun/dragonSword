@@ -1,6 +1,6 @@
-package com.quinn.code.easy;
+package easy;
 
-import com.quinn.code.enity.ListNode;
+import enity.ListNode;
 
 //2. 两数相加
 //输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)

@@ -1,6 +1,6 @@
-package com.quinn.code.medium;
+package medium;
 
-import com.quinn.code.enity.ListNode;
+import enity.ListNode;
 
 public class RemoveNthFromEndSolution {
     public ListNode removeNthFromEnd(ListNode head, int n) {

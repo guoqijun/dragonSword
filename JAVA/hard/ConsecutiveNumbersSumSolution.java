@@ -1,4 +1,4 @@
-package com.quinn.code.hard;
+package hard;
 
 public class ConsecutiveNumbersSumSolution {
     public static void main(String[] args) {
