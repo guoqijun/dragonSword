@@ -1,7 +1,5 @@
 package enity;
 
-import medium.RightSideViewSolution;
-
 public class TreeNode {
     public int val;
     public TreeNode left;

@@ -1,7 +1,5 @@
 package test;
 
-import medium.ConvertSolution;
-
 public class XiaoY {
     /**
      * @param k 最多上k介楼梯
